@@ -17,15 +17,12 @@ import TrackingStatus from './components/TrackingStatus';
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
-  const [vehicles, setVehicles] = React.useState([]);
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
         const response = await api.get('/vehicles');
         if (response?.data?.length > 0) {
           dispatch(fetchAllVehicles(response.data));
-          setVehicles(response.data);
-          
         }
       } catch (error) {
         console.error(error);
