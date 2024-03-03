@@ -1,0 +1,31 @@
+.analytics {
+    .analytics-container {
+        height: 300px;
+        color: white;
+        border-radius: 41px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        &.hours-operated {
+            background: #ff0a0a;
+        }
+        &.distance-traveled {
+            background: #0f9b47;
+        }
+        .title-text {
+            font-size: 21px;
+    width: 100%;
+    line-height: 22px;
+    display: block;
+        }
+        .value-text {
+            display: block;
+    width: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 62px;
+        }
+    }
+}
